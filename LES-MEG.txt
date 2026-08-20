@@ -1,0 +1,26 @@
+LYS LANGS VEIEN – SLIK LASTER DU OPP FILENE
+
+Denne mappen inneholder tre nettsidefiler:
+
+1. index.html – tekst og bilder på nettsiden
+2. style.css – utseendet på nettsiden
+3. script.js – åpner bildene i større visning
+
+OPPLASTING TIL GITHUB
+
+1. Åpne repositoryet lys-langs-veien i GitHub.
+2. Trykk Add file og deretter Upload files.
+3. Last opp index.html, style.css og script.js.
+4. Du kan også laste opp denne LES-MEG-filen, men det er ikke nødvendig.
+5. Skriv "Første versjon av nettsiden" under Commit changes.
+6. Trykk Commit changes.
+
+PUBLISERING I VERCEL
+
+1. Åpne Vercel og velg Add New > Project.
+2. Finn lys-langs-veien og trykk Import.
+3. Velg Framework Preset: Other.
+4. La Build Command og Output Directory stå tomme.
+5. Trykk Deploy.
+
+Prøvebildene hentes fra Unsplash. De skal senere erstattes med dine egne bilder.
