@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Galleri med naturbilder fra kyst, fjell og skog av Thomas Havnegjerde." />
+    <title>Galleri | Lys langs veien</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="subpage">
+    <header class="topbar topbar--solid">
+      <a class="logo" href="index.html" aria-label="Gå til forsiden">
+        <span class="logo-mark" aria-hidden="true"></span>Lys langs veien
+      </a>
+      <nav aria-label="Hovedmeny">
+        <a href="index.html">Forside</a>
+        <a href="galleri.html" aria-current="page">Galleri</a>
+        <a href="index.html#om">Om</a>
+      </nav>
+    </header>
+
+    <main id="topp">
+      <section class="gallery-intro page-width">
+        <p class="eyebrow dark">Samlede øyeblikk</p>
+        <h1>Galleri</h1>
+        <p>Bilder fra steder jeg har vært. Velg en kategori, eller bla gjennom hele samlingen.</p>
+      </section>
+
+      <section class="gallery-page page-width" aria-labelledby="gallery-title">
+        <h2 class="visually-hidden" id="gallery-title">Alle bilder</h2>
+        <div class="filters" aria-label="Filtrer bilder">
+          <button class="filter-button is-active" type="button" data-filter="alle">Alle</button>
+          <button class="filter-button" type="button" data-filter="kyst">Kyst og hav</button>
+          <button class="filter-button" type="button" data-filter="fjell">Fjell</button>
+          <button class="filter-button" type="button" data-filter="skog">Skog</button>
+        </div>
+        <div class="gallery gallery--all" data-gallery></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="page-width footer-inner">
+        <p>© <span data-year></span> Thomas Havnegjerde</p>
+        <p>Alle bilder er fotografert av Thomas Havnegjerde</p>
+        <a href="#topp">Til toppen ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" aria-label="Større visning av bilde">
+      <button class="lightbox-close" type="button" aria-label="Lukk bildevisning">×</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Forrige bilde">←</button>
+      <div class="lightbox-content">
+        <img src="" alt="" />
+        <div class="lightbox-text"><p class="lightbox-title"></p><p class="lightbox-meta"></p></div>
+      </div>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Neste bilde">→</button>
+    </dialog>
+    <script src="bilder.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
