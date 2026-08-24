@@ -10,4 +10,4 @@ window.BILDER = [
   { fil: "Bilde-04.jpeg", tittel: "Sommerkveld i Lærdal", sted: "Vestland", kategori: "fjell", utvalgt: false, format: "tall" },
   { fil: "Bilde-05.jpeg", tittel: "Aftenstemning i Kragerø", sted: "Telemark", kategori: "kyst", utvalgt: false, format: "standard" },
   { fil: "Bilde-06.jpeg", tittel: "Julikveld i Nusfjord", sted: "Lofoten", kategori: "kyst", utvalgt: true, format: "wide" },
-];{ fil: "Bilde-07.jpeg", tittel: "Skriv bildets tittel her", sted: "Skriv stedet her", kategori: "kyst", utvalgt: false, format: "standard" },
+];{ fil: "Bilde-07.jpeg", tittel: "Påsketur til Store Ringstind", sted: "Hurrungane", kategori: "fjell", utvalgt: false, format: "standard" },
