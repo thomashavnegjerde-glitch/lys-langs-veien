@@ -61,6 +61,6 @@ window.BILDER = [
     sted: "Deauville, Frankrike",
     kategori: "kyst",
     utvalgt: false,
-    format: "standard"
+    format: "wide"
   }
 ];
