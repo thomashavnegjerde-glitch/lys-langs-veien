@@ -54,7 +54,7 @@ window.BILDER = [
     kategori: "fjell",
     utvalgt: false,
     format: "standard"
-  }
+  },
   {
     fil: "Bilde-08.jpeg",
     tittel: "Før gjestene kommer",
@@ -62,5 +62,5 @@ window.BILDER = [
     kategori: "kyst",
     utvalgt: false,
     format: "standard"
-      
-  ];
+  }
+];
