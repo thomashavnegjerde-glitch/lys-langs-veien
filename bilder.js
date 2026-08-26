@@ -55,4 +55,10 @@ window.BILDER = [
     utvalgt: false,
     format: "standard"
   }
- ];
+  {
+    fil: "Bilde-08.jpeg",
+    tittel: "Før gjestene kommer",
+    sted: "Deauville, Frankrike",
+    kategori: "kyst",
+    utvalgt: false,
+    format: "standard" ];
