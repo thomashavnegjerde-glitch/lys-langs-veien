@@ -55,4 +55,4 @@ window.BILDER = [
     utvalgt: false,
     format: "standard"
   }
- 
+ ];
