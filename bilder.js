@@ -1,6 +1,6 @@
 window.BILDER = [
   {
-    fil: "Bilde-01ny.jpeg",
+    fil: "optimized/Bilde-01ny.webp",
     tittel: "En rolig aften på Fugløya",
     sted: "Nordland",
     kategori: "kyst",
@@ -8,7 +8,7 @@ window.BILDER = [
     format: "wide"
   },
   {
-    fil: "Bilde-02.jpeg",
+    fil: "optimized/Bilde-02.webp",
     tittel: "Mellom trærne",
     sted: "",
     kategori: "skog",
@@ -16,7 +16,7 @@ window.BILDER = [
     format: "tall"
   },
   {
-    fil: "Bilde-03ny.jpeg",
+    fil: "optimized/Bilde-03ny.webp",
     tittel: "Midnattsol på Husøy",
     sted: "Nordland",
     kategori: "kyst",
@@ -24,7 +24,7 @@ window.BILDER = [
     format: "standard"
   },
   {
-    fil: "Bilde-04.jpeg",
+    fil: "optimized/Bilde-04.webp",
     tittel: "Sommerkveld i Lærdal",
     sted: "Vestland",
     kategori: "fjell",
@@ -32,7 +32,7 @@ window.BILDER = [
     format: "tall"
   },
   {
-    fil: "Bilde-05.jpeg",
+    fil: "optimized/Bilde-05.webp",
     tittel: "Aftenstemning i Kragerø",
     sted: "Telemark",
     kategori: "kyst",
@@ -40,7 +40,7 @@ window.BILDER = [
     format: "standard"
   },
   {
-    fil: "Bilde-06.jpeg",
+    fil: "optimized/Bilde-06.webp",
     tittel: "Julikveld i Nusfjord",
     sted: "Lofoten",
     kategori: "kyst",
@@ -48,7 +48,7 @@ window.BILDER = [
     format: "wide"
   },
   {
-    fil: "Bilde-07.jpeg",
+    fil: "optimized/Bilde-07.webp",
     tittel: "Påsketur til Store Ringstind",
     sted: "Hurrungane",
     kategori: "fjell",
@@ -56,7 +56,7 @@ window.BILDER = [
     format: "standard"
   },
   {
-    fil: "Bilde-08.jpeg",
+    fil: "optimized/Bilde-08.webp",
     tittel: "Før gjestene kommer",
     sted: "Deauville, Frankrike",
     kategori: "kyst",
@@ -64,7 +64,7 @@ window.BILDER = [
     format: "wide"
   },
   {
-    fil: "IMG_1516.jpeg",
+    fil: "optimized/IMG_1516.webp",
     tittel: "Kveldsro",
     sted: "Nordland",
     kategori: "kyst",
@@ -72,7 +72,7 @@ window.BILDER = [
     format: "wide"
   },
   {
-  fil: "Bilde-10.jpeg?v=2",
+  fil: "optimized/Bilde-10.webp",
   tittel: "After sail",
   sted: "Hvasser",
   kategori: "kyst",
@@ -80,7 +80,7 @@ window.BILDER = [
   format: "standard"
   },
     {
-    fil: "Bilde-09.jpeg",
+    fil: "optimized/Bilde-09.webp",
     tittel: "Refviksanden",
     sted: "Refvik nær Måløy",
     kategori: "kyst",
