@@ -79,4 +79,12 @@ window.BILDER = [
   utvalgt: false,
   format: "standard"
   },
-  ];
+    {
+    fil: "Bilde-10.jpeg",
+    tittel: "Refviksanden",
+    sted: "Refvik nær Måløy",
+    kategori: "kyst",
+    utvalgt: false,
+    format: "wide"
+  }, 
+];
