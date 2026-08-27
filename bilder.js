@@ -63,4 +63,11 @@ window.BILDER = [
     utvalgt: false,
     format: "wide"
   }
-];
+  {
+    fil: "Bilde-11.jpeg",
+    tittel: "Kveldsro",
+    sted: "Nordland",
+    kategori: "kyst",
+    utvalgt: false,
+    format: "wide"
+      ];
