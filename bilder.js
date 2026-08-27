@@ -64,7 +64,7 @@ window.BILDER = [
     format: "wide"
   }
   {
-    fil: "Bilde-11.jpeg",
+    fil: "IMG_1516.jpeg",
     tittel: "Kveldsro",
     sted: "Nordland",
     kategori: "kyst",
