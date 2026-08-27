@@ -71,4 +71,12 @@ window.BILDER = [
     utvalgt: false,
     format: "wide"
   }
-];
+  {
+  fil: "Bilde-10.jpeg",
+  tittel: "After sail",
+  sted: "Hvasser",
+  kategori: "kyst",
+  utvalgt: false,
+  format: "standard"
+  },
+  ];
