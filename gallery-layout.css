@@ -38,6 +38,17 @@
   aspect-ratio: 16 / 8.1;
 }
 
+/* True panoramas span the gallery and keep their cinematic proportions. */
+.gallery--all .gallery-item.panorama {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.gallery--all .gallery-item.panorama .gallery-image-button {
+  aspect-ratio: 3.2 / 1;
+}
+
 .gallery-image-button img {
   width: 100%;
   height: 100%;
@@ -138,6 +149,16 @@
   .gallery--all .gallery-item:nth-child(5n + 3) .gallery-image-button,
   .gallery[data-featured-only="true"] .gallery-image-button {
     aspect-ratio: 4 / 3;
+  }
+
+  .gallery--all .gallery-item.panorama {
+    grid-column: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .gallery--all .gallery-item.panorama .gallery-image-button {
+    aspect-ratio: 3.2 / 1;
   }
 
   .gallery-item-text {

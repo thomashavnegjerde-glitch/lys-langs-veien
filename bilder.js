@@ -86,5 +86,13 @@ window.BILDER = [
     kategori: "kyst",
     utvalgt: false,
     format: "wide"
+  },
+  {
+    fil: "optimized/Nordre-Isfjorden-Svalbard.webp",
+    tittel: "Nordre Isfjorden",
+    sted: "Svalbard",
+    kategori: "kyst",
+    utvalgt: false,
+    format: "panorama"
   }
 ];
