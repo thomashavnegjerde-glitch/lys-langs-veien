@@ -119,15 +119,6 @@
   border-color: var(--moss);
 }
 
-/* Featured images on the home page stay cinematic and full-width. */
-.gallery[data-featured-only="true"] .gallery-item {
-  grid-column: 1 / -1;
-}
-
-.gallery[data-featured-only="true"] .gallery-image-button {
-  aspect-ratio: 16 / 8.4;
-}
-
 .image-error .gallery-image-button {
   min-height: 320px;
   background: linear-gradient(135deg, #bec7be, #e6e3d9);
@@ -146,8 +137,7 @@
     grid-column: auto;
   }
 
-  .gallery--all .gallery-item:nth-child(5n + 3) .gallery-image-button,
-  .gallery[data-featured-only="true"] .gallery-image-button {
+  .gallery--all .gallery-item:nth-child(5n + 3) .gallery-image-button {
     aspect-ratio: 4 / 3;
   }
 
