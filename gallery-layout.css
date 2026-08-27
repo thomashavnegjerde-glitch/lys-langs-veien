@@ -1,0 +1,100 @@
+.gallery {
+  align-items: start;
+}
+
+.gallery-item {
+  min-width: 0;
+  margin: 0;
+}
+
+/* Keep the full gallery calm and consistent regardless of source image shape. */
+.gallery--all .gallery-item.wide,
+.gallery--all .gallery-item.tall,
+.gallery--all .gallery-item.standard {
+  grid-column: auto;
+}
+
+.gallery-image-button {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  padding: 0;
+  border: 0;
+  background: #d9ddd7;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.gallery-image-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 450ms ease;
+}
+
+.gallery-image-button:hover img {
+  transform: scale(1.015);
+}
+
+.gallery-item-text {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 13px;
+  font-size: 0.91rem;
+}
+
+.gallery-item-text h3 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.gallery-item-text p {
+  margin: 0;
+  color: var(--muted);
+  text-align: right;
+}
+
+/* Featured images on the home page stay more cinematic. */
+.gallery[data-featured-only="true"] .gallery-item {
+  grid-column: 1 / -1;
+}
+
+.gallery[data-featured-only="true"] .gallery-image-button {
+  aspect-ratio: 16 / 8.4;
+}
+
+.filter-button.active,
+.filter-button.is-active {
+  color: white;
+  background: var(--moss);
+  border-color: var(--moss);
+}
+
+.image-error .gallery-image-button {
+  min-height: 320px;
+  background: linear-gradient(135deg, #bec7be, #e6e3d9);
+}
+
+.image-error .gallery-image-button img {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .gallery-item-text {
+    gap: 12px;
+  }
+
+  .gallery[data-featured-only="true"] .gallery-image-button {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-image-button img {
+    transition: none;
+  }
+}
