@@ -1,8 +1,8 @@
 window.BILDER = [
   {
     fil: "optimized/Bilde-01ny.webp",
-    tittel: "En rolig aften på Fugløya",
-    sted: "Nordland",
+    tittel: "Kveldslys",
+    sted: "Fugløya, Nordland",
     kategori: "kyst",
     utvalgt: true,
     format: "wide"
@@ -17,39 +17,39 @@ window.BILDER = [
   },
   {
     fil: "optimized/Bilde-03ny.webp",
-    tittel: "Midnattsol på Husøy",
-    sted: "Nordland",
+    tittel: "Midnattsol",
+    sted: "Husøy, Nordland",
     kategori: "kyst",
     utvalgt: true,
     format: "standard"
   },
   {
     fil: "optimized/Bilde-04.webp",
-    tittel: "Sommerkveld i Lærdal",
-    sted: "Vestland",
+    tittel: "Sommerkveld",
+    sted: "Lærdal, Vestland",
     kategori: "fjell",
     utvalgt: false,
     format: "tall"
   },
   {
     fil: "optimized/Bilde-05.webp",
-    tittel: "Aftenstemning i Kragerø",
-    sted: "Telemark",
+    tittel: "Aftenlys",
+    sted: "Kragerø, Telemark",
     kategori: "kyst",
     utvalgt: false,
     format: "standard"
   },
   {
     fil: "optimized/Bilde-06.webp",
-    tittel: "Julikveld i Nusfjord",
-    sted: "Lofoten",
+    tittel: "Julikveld",
+    sted: "Nusfjord, Lofoten",
     kategori: "kyst",
     utvalgt: true,
     format: "wide"
   },
   {
     fil: "optimized/Bilde-07.webp",
-    tittel: "Påsketur til Store Ringstind",
+    tittel: "Store Ringstind",
     sted: "Hurrungane",
     kategori: "fjell",
     utvalgt: false,
@@ -72,19 +72,19 @@ window.BILDER = [
     format: "wide"
   },
   {
-  fil: "optimized/Bilde-10.webp",
-  tittel: "After sail",
-  sted: "Hvasser",
-  kategori: "kyst",
-  utvalgt: false,
-  format: "standard"
+    fil: "optimized/Bilde-10.webp",
+    tittel: "Etter seilasen",
+    sted: "Hvasser",
+    kategori: "kyst",
+    utvalgt: false,
+    format: "standard"
   },
-    {
+  {
     fil: "optimized/Bilde-09.webp",
     tittel: "Refviksanden",
-    sted: "Refvik nær Måløy",
+    sted: "Refvik ved Måløy",
     kategori: "kyst",
     utvalgt: false,
     format: "wide"
-  }, 
+  }
 ];
