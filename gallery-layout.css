@@ -7,11 +7,19 @@
   margin: 0;
 }
 
-/* Keep the full gallery calm and consistent regardless of source image shape. */
+/* Editorial rhythm on the full gallery: pairs of images interrupted by a large landscape. */
+.gallery--all {
+  gap: 82px 30px;
+}
+
 .gallery--all .gallery-item.wide,
 .gallery--all .gallery-item.tall,
 .gallery--all .gallery-item.standard {
   grid-column: auto;
+}
+
+.gallery--all .gallery-item:nth-child(5n + 3) {
+  grid-column: 1 / -1;
 }
 
 .gallery-image-button {
@@ -20,9 +28,14 @@
   aspect-ratio: 4 / 3;
   padding: 0;
   border: 0;
+  border-radius: 0;
   background: #d9ddd7;
   cursor: zoom-in;
   overflow: hidden;
+}
+
+.gallery--all .gallery-item:nth-child(5n + 3) .gallery-image-button {
+  aspect-ratio: 16 / 8.1;
 }
 
 .gallery-image-button img {
@@ -33,7 +46,7 @@
 }
 
 .gallery-image-button:hover img {
-  transform: scale(1.015);
+  transform: scale(1.012);
 }
 
 .gallery-item-text {
@@ -41,8 +54,9 @@
   align-items: baseline;
   justify-content: space-between;
   gap: 20px;
-  margin-top: 13px;
-  font-size: 0.91rem;
+  margin-top: 12px;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
 }
 
 .gallery-item-text h3 {
@@ -56,15 +70,35 @@
   margin: 0;
   color: var(--muted);
   text-align: right;
+  font-size: 0.78rem;
 }
 
-/* Featured images on the home page stay more cinematic. */
-.gallery[data-featured-only="true"] .gallery-item {
-  grid-column: 1 / -1;
+/* Keep the gallery introduction compact so the photography arrives sooner. */
+.subpage .gallery-intro {
+  padding-top: clamp(58px, 8vw, 96px);
+  padding-bottom: 26px;
 }
 
-.gallery[data-featured-only="true"] .gallery-image-button {
-  aspect-ratio: 16 / 8.4;
+.subpage .gallery-intro > p:last-child {
+  margin-bottom: 0;
+  max-width: 540px;
+  color: var(--muted);
+}
+
+.subpage .gallery-page {
+  padding-bottom: clamp(86px, 11vw, 150px);
+}
+
+.subpage .filters {
+  margin-top: 22px;
+  margin-bottom: 44px;
+  gap: 7px;
+}
+
+.subpage .filter-button {
+  padding: 7px 13px;
+  font-size: 0.82rem;
+  background: transparent;
 }
 
 .filter-button.active,
@@ -72,6 +106,15 @@
   color: white;
   background: var(--moss);
   border-color: var(--moss);
+}
+
+/* Featured images on the home page stay cinematic and full-width. */
+.gallery[data-featured-only="true"] .gallery-item {
+  grid-column: 1 / -1;
+}
+
+.gallery[data-featured-only="true"] .gallery-image-button {
+  aspect-ratio: 16 / 8.4;
 }
 
 .image-error .gallery-image-button {
@@ -84,12 +127,26 @@
 }
 
 @media (max-width: 760px) {
-  .gallery-item-text {
-    gap: 12px;
+  .gallery--all {
+    gap: 54px;
   }
 
+  .gallery--all .gallery-item:nth-child(5n + 3) {
+    grid-column: auto;
+  }
+
+  .gallery--all .gallery-item:nth-child(5n + 3) .gallery-image-button,
   .gallery[data-featured-only="true"] .gallery-image-button {
     aspect-ratio: 4 / 3;
+  }
+
+  .gallery-item-text {
+    gap: 12px;
+    font-size: 0.8rem;
+  }
+
+  .subpage .filters {
+    margin-bottom: 36px;
   }
 }
 
