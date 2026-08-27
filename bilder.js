@@ -70,7 +70,7 @@ window.BILDER = [
     kategori: "kyst",
     utvalgt: false,
     format: "wide"
-  }
+  },
   {
   fil: "Bilde-10.jpeg",
   tittel: "After sail",
