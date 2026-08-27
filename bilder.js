@@ -70,4 +70,5 @@ window.BILDER = [
     kategori: "kyst",
     utvalgt: false,
     format: "wide"
-      ];
+  
+  ];
