@@ -1,0 +1,90 @@
+name: Optimize website images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/optimize-images.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install image optimizer
+        run: npm install --no-save sharp
+
+      - name: Create optimized WebP images
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const sharp = require('sharp');
+
+          const files = fs.readdirSync('.')
+            .filter(f => /\.(jpe?g)$/i.test(f));
+
+          fs.mkdirSync('optimized', { recursive: true });
+
+          (async () => {
+            for (const file of files) {
+              const base = path.basename(file, path.extname(file));
+              const out = path.join('optimized', `${base}.webp`);
+              const hero = file === 'Forside.jpeg';
+              const maxWidth = hero ? 2400 : 2200;
+
+              const image = sharp(file).rotate();
+              const meta = await image.metadata();
+              const pipeline = meta.width && meta.width > maxWidth
+                ? image.resize({ width: maxWidth, withoutEnlargement: true })
+                : image;
+
+              await pipeline.webp({ quality: 82, effort: 5 }).toFile(out);
+
+              const before = fs.statSync(file).size;
+              const after = fs.statSync(out).size;
+              console.log(`${file}: ${(before/1024/1024).toFixed(2)} MB -> ${(after/1024).toFixed(0)} KB`);
+            }
+          })().catch(err => {
+            console.error(err);
+            process.exit(1);
+          });
+          NODE
+
+      - name: Point website to optimized files
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+
+          let bilder = fs.readFileSync('bilder.js', 'utf8');
+          bilder = bilder.replace(/fil:\s*"([^"?]+)\.jpeg(?:\?[^\"]*)?"/g, (_, name) => `fil: "optimized/${name}.webp"`);
+          fs.writeFileSync('bilder.js', bilder);
+
+          let index = fs.readFileSync('index.html', 'utf8');
+          index = index.replace('src="Forside.jpeg"', 'src="optimized/Forside.webp"');
+          fs.writeFileSync('index.html', index);
+          NODE
+
+      - name: Commit optimized assets
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add optimized bilder.js index.html
+          if git diff --cached --quiet; then
+            echo 'No image changes to commit.'
+          else
+            git commit -m 'Optimize website images for faster loading'
+            git push
+          fi
