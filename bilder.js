@@ -80,7 +80,7 @@ window.BILDER = [
   format: "standard"
   },
     {
-    fil: "Bilde-10.jpeg",
+    fil: "Bilde-09.jpeg",
     tittel: "Refviksanden",
     sted: "Refvik nær Måløy",
     kategori: "kyst",
