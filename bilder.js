@@ -72,7 +72,7 @@ window.BILDER = [
     format: "wide"
   },
   {
-  fil: "Bilde-10.jpeg",
+  fil: "Bilde-10.jpeg?v=2,
   tittel: "After sail",
   sted: "Hvasser",
   kategori: "kyst",
