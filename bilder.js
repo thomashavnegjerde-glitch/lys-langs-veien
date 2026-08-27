@@ -62,7 +62,7 @@ window.BILDER = [
     kategori: "kyst",
     utvalgt: false,
     format: "wide"
-  }
+  },
   {
     fil: "IMG_1516.jpeg",
     tittel: "Kveldsro",
@@ -70,5 +70,5 @@ window.BILDER = [
     kategori: "kyst",
     utvalgt: false,
     format: "wide"
-  
-  ];
+  }
+];
