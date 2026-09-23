@@ -98,7 +98,7 @@ window.BILDER = [
   {
   fil: "optimized/fiske-ved-fjellvann.webp",
   tittel: "Fiske ved fjellvann",
-  sted: "",
+  sted: "Leirvatnet",
   kategori: "fjell",
   utvalgt: false,
   format: "wide"
