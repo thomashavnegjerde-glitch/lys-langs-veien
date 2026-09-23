@@ -94,5 +94,13 @@ window.BILDER = [
     kategori: "kyst",
     utvalgt: false,
     format: "panorama"
-  }
+  },
+  {
+  fil: "optimized/fiske-ved-fjellvann.webp",
+  tittel: "Fiske ved fjellvann",
+  sted: "",
+  kategori: "fjell",
+  utvalgt: false,
+  format: "wide"
+},
 ];
