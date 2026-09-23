@@ -102,5 +102,5 @@ window.BILDER = [
   kategori: "fjell",
   utvalgt: false,
   format: "wide"
-},
+}
 ];
