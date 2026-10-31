@@ -178,11 +178,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const category = button.dataset.filter || "alle";
 
       document.querySelectorAll("[data-filter]").forEach((filterButton) => {
-        filterButton.classList.remove("active");
+        filterButton.classList.remove("active", "is-active");
         filterButton.removeAttribute("aria-current");
       });
 
-      button.classList.add("active");
+      button.classList.add("is-active");
       button.setAttribute("aria-current", "true");
 
       galleries.forEach((gallery) => {
